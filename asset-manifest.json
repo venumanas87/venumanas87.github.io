@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/venumanas87.github.io/static/css/main.1afd1ec4.css",
-    "main.js": "/venumanas87.github.io/static/js/main.ef9e6c89.js",
-    "static/media/venu_bg.png": "/venumanas87.github.io/static/media/venu_bg.e3a2fd6a6e2fc729c061.png",
-    "static/media/rotate_icons.png": "/venumanas87.github.io/static/media/rotate_icons.ccc860255155e325f4f2.png",
-    "index.html": "/venumanas87.github.io/index.html",
-    "main.1afd1ec4.css.map": "/venumanas87.github.io/static/css/main.1afd1ec4.css.map",
-    "main.ef9e6c89.js.map": "/venumanas87.github.io/static/js/main.ef9e6c89.js.map"
+    "main.css": "/static/css/main.ae8ed7f4.css",
+    "main.js": "/static/js/main.64d889a8.js",
+    "static/media/venu_bg.png": "/static/media/venu_bg.e3a2fd6a6e2fc729c061.png",
+    "static/media/rotate_icons.png": "/static/media/rotate_icons.ccc860255155e325f4f2.png",
+    "index.html": "/index.html",
+    "main.ae8ed7f4.css.map": "/static/css/main.ae8ed7f4.css.map",
+    "main.64d889a8.js.map": "/static/js/main.64d889a8.js.map"
   },
   "entrypoints": [
-    "static/css/main.1afd1ec4.css",
-    "static/js/main.ef9e6c89.js"
+    "static/css/main.ae8ed7f4.css",
+    "static/js/main.64d889a8.js"
   ]
 }
