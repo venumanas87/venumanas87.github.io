@@ -1,38 +1,185 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+:root {
+    --dark: #181818;
+    --grey: #2e2e2e;
+    --light: #F2F2F2;
+    --purple:#8758FF;
+    --purpleLight:#c2a9ff;
+    --cyan:#5CB8E4;
   }
+
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    overflow:hidden;
+    background-color: var(--light);
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.mainMob{
+    display: none;
 }
 
-.App-link {
-  color: #61dafb;
+.fullscreen{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-image: url(.//assets/venu_bg.png);
+    background-size: 40vw 40vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.main h1{
+    font-size: 3em;   
+}
+
+.rotate{
+    width: 43vw;
+    height: 43vw;
+    transform-origin: center;
+    animation: loader 10s infinite linear;
+    transition: all 0.5s ease;
+}
+
+@keyframes loader {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+.logo{
+    position:absolute;
+    transform: scale(0.8);
+}
+
+.contentText{
+    margin-left: 20px;
+    color: var(--grey);
+}
+
+
+
+.bottom-nav > li{
+    list-style: none;
+    color: white;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    scale: 1.2;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+    border-radius: 50%;
+
+}
+
+h4{
+    font-size: 1.5em;
+}
+
+.bottom-nav > .nrmlLi:hover{
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.activeLi{
+    background: var(--purple);
+    transform: scale(1.4);
+    color: linear-gradient(to right,var(--purpleLight),var(--cyan));
+}
+
+.red{
+    background: linear-gradient(to right,#ff85eb,var(--purpleLight),var(--cyan));
+    display: inline;
+    font-weight: bolder;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bottom-nav{
+    height: 60px;
+    width: 30vw;
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    background: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: space-evenly;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    bottom: 20px;
+    border-radius: 100px;
+    padding: 10px;
+}
+
+
+@media screen and (max-width: 600px){
+
+
+    .main{
+        display: none
+    }
+
+    .mainMob{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        overflow:hidden;
+        background-color: var(--light);
+        width: 100vw;
+        height: 100vh;
+        padding-top: 50px;
+    }
+
+
+    .fullscreen{
+        height: max-content;
+        width: 100vw;
+        background-size: 30vh 30vh;
+    }
+
+    .red{
+        display: block;
+    }
+
+    h1{
+        font-size: 2em;
+    }
+
+    h4{
+        font-size: 1em;
+    }
+
+    .rotate{
+        width: 33vh;
+        height: 33vh;
+    
+    }
+
+    .logo{
+        transform: scale(0.5);
+        top: -20px;
+    }
+
+    .contentText{
+        height: 50vh;
+        width:100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: center;
+        align-items: center;
+    }
 }
