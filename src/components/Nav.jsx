@@ -8,8 +8,6 @@ import { useNavigate } from "react-router-dom";
 
 export default function Nav() {
   const [active, setActive] = useState("me");
-
-  const [active,setActive] = useState("me");
   const navigate = useNavigate();
 
   const navClick = (tab)=>{
