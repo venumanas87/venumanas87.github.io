@@ -1,0 +1,36 @@
+:root {
+    --dark: #181818;
+    --grey: #2e2e2e;
+    --light: #F2F2F2;
+    --purple:#8758FF;
+    --purpleLight:#c2a9ff;
+    --cardBackground:#001e4a;
+    --cyan:#5CB8E4;
+  }
+
+.skill{
+    height: 80px;
+    background-color: var(--cardBackground);
+    width: min-content;
+    padding: 9px;
+    margin: 10px;
+    margin-top: 20px;
+    display: inline-block;
+    border-radius: 10px;
+    transition: all 400ms ease;
+}
+
+.skill:hover{
+    scale:1.1;
+}
+
+.title{
+    color: white;
+    padding-right: 100px;
+    display: inline;
+}
+
+h5{
+    color: white;
+    display: inline;
+}
