@@ -7,6 +7,7 @@ import { useState } from 'react'
 import { useNavigate } from "react-router-dom";
 
 export default function Nav() {
+  const [active, setActive] = useState("me");
 
   const [active,setActive] = useState("me");
   const navigate = useNavigate();
@@ -24,5 +25,5 @@ export default function Nav() {
     <li className={active==='chat'?"activeLi":"nrmlLi"} onClick={()=>{navClick('chat')}}><SiGooglemessages/></li>               
     </div>  
     </>
-  )
+  );
 }
